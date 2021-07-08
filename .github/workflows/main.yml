@@ -1,0 +1,31 @@
+name: iOS Build
+
+on:
+  push:
+    branches:
+      - main
+      - 'release/**'
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Installing dependencies
+        run: pod install
+
+      - uses: yukiarrr/ios-build-action@v1.4.0
+        with:
+          project-path: SNMusic.xcodeproj
+          p12-base64: ${{ secrets.P12_BASE64 }}
+          code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
+          team-id: ${{ secrets.TEAM_ID }}
+          workspace-path: SNMusic.xcworkspace
+          scheme: SNMusic
+          export-method: development
+          configuration: Debug
+          mobileprovision-path: |
+            Certs/dev.mobileprovision
+      - name: Upload to appcenter
+        run: bash Scripts/upload_to_appcenter.sh
