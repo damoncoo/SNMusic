@@ -1,6 +1,6 @@
 #!/bin/sh
 owner_name="damoncoo"
-app_name="Yi"
+app_name="SNMusic"
 token="3bbdf9f880358ddb7c31e5f81da43e160b1f5be4"
 build_path="output.ipa"
 destination_name="Internal"
