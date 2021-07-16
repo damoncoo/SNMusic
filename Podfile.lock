@@ -1,17 +1,20 @@
 PODS:
   - Alamofire (5.4.3)
+  - AMMusicPlayerController (0.1.3):
+    - RxMusicPlayer
+    - SPStorkController
   - CRRefresh (1.1.3)
   - HandyJSON (5.0.2)
   - HappyDNS (0.3.17)
   - Kingfisher (6.3.0)
-  - PromiseKit (6.15.2):
-    - PromiseKit/CorePromise (= 6.15.2)
-    - PromiseKit/Foundation (= 6.15.2)
-    - PromiseKit/UIKit (= 6.15.2)
-  - PromiseKit/CorePromise (6.15.2)
-  - PromiseKit/Foundation (6.15.2):
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.15.2):
+  - PromiseKit/UIKit (6.15.3):
     - PromiseKit/CorePromise
   - PryntTrimmerView (4.0.2)
   - Qiniu (8.1.2):
@@ -19,10 +22,15 @@ PODS:
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxMusicPlayer (1.0.0):
+    - RxCocoa
+    - RxRelay
+    - RxSwift
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.2)
   - SnapKit (5.0.1)
+  - SPStorkController (1.8.5)
   - SteviaLayout (4.7.3)
   - SwCrypt (5.1.3)
   - SwiftDate (6.2.0)
@@ -76,7 +84,8 @@ PODS:
     - SteviaLayout (~> 4.7.3)
 
 DEPENDENCIES:
-  - YiCore (~> 0.1.0)
+  - AMMusicPlayerController (~> 0.1.3)
+  - YiCore (from `https://github.com/damoncoo/yi-core-lib.git`, branch `master`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -89,9 +98,11 @@ SPEC REPOS:
     - PryntTrimmerView
     - Qiniu
     - RxCocoa
+    - RxMusicPlayer
     - RxRelay
     - RxSwift
     - SnapKit
+    - SPStorkController
     - SteviaLayout
     - SwCrypt
     - SwiftDate
@@ -100,30 +111,43 @@ SPEC REPOS:
     - SwiftyRSA
     - YPImagePicker
   https://github.com/damoncoo/XYSepc.git:
-    - YiCore
+    - AMMusicPlayerController
+
+EXTERNAL SOURCES:
+  YiCore:
+    :branch: master
+    :git: https://github.com/damoncoo/yi-core-lib.git
+
+CHECKOUT OPTIONS:
+  YiCore:
+    :commit: 395f8355cdf99689854387917c9bb6205e7c2136
+    :git: https://github.com/damoncoo/yi-core-lib.git
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  AMMusicPlayerController: 410fcd66952d65ee4118e753e08d85062c656899
   CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HappyDNS: 848ef73e24f2b0e2752064223ce2dc0dd88900ea
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
-  PromiseKit: b11e20e02977f69571038a631a467e010eb43206
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   Qiniu: 227df98daf83303c3684bce92b8dbcf7689c59fe
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxMusicPlayer: 3990b530434e8a125870994fd9929990f05f1942
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SPStorkController: 68966ed3134de2be2a8bbd1475c7e81f3f7d01ee
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SwCrypt: 0d1f951b8a993d6e107f4776ee0d72c1adafd1df
   SwiftDate: d117c3eb6beed72e47d3f4d1e3bc63fa1e66d7c3
   Swifter: e71dd674404923d7f03ebb03f3f222d1c570bc8e
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
-  YiCore: c054fa897806b47574a76b458a56cea0f1153b4e
+  YiCore: a3a67fb50126b734be63c9dd03bbb75c069f9d68
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: ee696af8ce3935fd897e65fa7a04a0617a495c22
+PODFILE CHECKSUM: f4ee5c7dcfbd156e05b608e91b2065acf4c819a0
 
 COCOAPODS: 1.10.1

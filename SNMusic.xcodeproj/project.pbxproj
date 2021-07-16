@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		9609922DDD8CEEC7094C9186 /* Pods_SNMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444A067D54ED196E311D6553 /* Pods_SNMusic.framework */; };
 		A6A54DE1AB715AFE32FEFCAF /* Pods_SNMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CB6E6823DFC3AA5C1DC4EE /* Pods_SNMusicTests.framework */; };
+		C7324ECB269BD97500453F8D /* SNMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ECA269BD97500453F8D /* SNMusic.swift */; };
+		C7324ECE269BDA4C00453F8D /* SNNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ECD269BDA4C00453F8D /* SNNavigationController.swift */; };
+		C7324ED0269C1AC600453F8D /* SNMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ECF269C1AC600453F8D /* SNMusicCell.swift */; };
+		C7324ED226A0752600453F8D /* SNSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ED126A0752600453F8D /* SNSearchViewController.swift */; };
+		C7324ED526A0778100453F8D /* SNMusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ED426A0778100453F8D /* SNMusicProvider.swift */; };
 		C77CD2AF26675FF600AC5804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2AE26675FF600AC5804 /* AppDelegate.swift */; };
 		C77CD2B326675FF600AC5804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2B226675FF600AC5804 /* ViewController.swift */; };
 		C77CD2B626675FF600AC5804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77CD2B426675FF600AC5804 /* Main.storyboard */; };
@@ -47,6 +52,11 @@
 		704419A41C9E177D15ABCAEE /* Pods-SNMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNMusic.debug.xcconfig"; path = "Target Support Files/Pods-SNMusic/Pods-SNMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		B57D23E06CCB484D5DA0CE8D /* Pods_SNMusic_SNMusicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNMusic_SNMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72451F2438D87FC3AB611C8 /* Pods-SNMusic-SNMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNMusic-SNMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SNMusic-SNMusicUITests/Pods-SNMusic-SNMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7324ECA269BD97500453F8D /* SNMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMusic.swift; sourceTree = "<group>"; };
+		C7324ECD269BDA4C00453F8D /* SNNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNavigationController.swift; sourceTree = "<group>"; };
+		C7324ECF269C1AC600453F8D /* SNMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMusicCell.swift; sourceTree = "<group>"; };
+		C7324ED126A0752600453F8D /* SNSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSearchViewController.swift; sourceTree = "<group>"; };
+		C7324ED426A0778100453F8D /* SNMusicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNMusicProvider.swift; sourceTree = "<group>"; };
 		C77CD2AB26675FF600AC5804 /* SNMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77CD2AE26675FF600AC5804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C77CD2B226675FF600AC5804 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +126,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C7324EC9269BD96400453F8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7324ECA269BD97500453F8D /* SNMusic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7324ECC269BDA1E00453F8D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C7324ECD269BDA4C00453F8D /* SNNavigationController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C7324ED326A0776F00453F8D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C7324ED426A0778100453F8D /* SNMusicProvider.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		C77CD2A226675FF500AC5804 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +175,7 @@
 		C77CD2AD26675FF600AC5804 /* SNMusic */ = {
 			isa = PBXGroup;
 			children = (
+				C7324ECC269BDA1E00453F8D /* Common */,
 				C77CD2E4266760A000AC5804 /* Modules */,
 				C77CD2AE26675FF600AC5804 /* AppDelegate.swift */,
 				C77CD2B226675FF600AC5804 /* ViewController.swift */,
@@ -181,6 +216,8 @@
 		C77CD2E5266760B700AC5804 /* Musics */ = {
 			isa = PBXGroup;
 			children = (
+				C7324ED326A0776F00453F8D /* Other */,
+				C7324EC9269BD96400453F8D /* Model */,
 				C77CD2E8266760DC00AC5804 /* Presenter */,
 				C77CD2E7266760D400AC5804 /* Controller */,
 				C77CD2E6266760CA00AC5804 /* View */,
@@ -191,6 +228,7 @@
 		C77CD2E6266760CA00AC5804 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7324ECF269C1AC600453F8D /* SNMusicCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				C77CD2EE2667611800AC5804 /* SNMusicViewController.swift */,
+				C7324ED126A0752600453F8D /* SNSearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,10 +488,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7324ECB269BD97500453F8D /* SNMusic.swift in Sources */,
+				C7324ED526A0778100453F8D /* SNMusicProvider.swift in Sources */,
 				C77CD2B326675FF600AC5804 /* ViewController.swift in Sources */,
+				C7324ECE269BDA4C00453F8D /* SNNavigationController.swift in Sources */,
 				C77CD2AF26675FF600AC5804 /* AppDelegate.swift in Sources */,
 				C77CD2EA266760FD00AC5804 /* SNMusicPlayerPresenter.swift in Sources */,
+				C7324ED226A0752600453F8D /* SNSearchViewController.swift in Sources */,
 				C77CD2EF2667611800AC5804 /* SNMusicViewController.swift in Sources */,
+				C7324ED0269C1AC600453F8D /* SNMusicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,9 +682,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sxkj.qin.SNMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxkj.qin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = wkzg_wild;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.sxkj.qin";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -661,9 +705,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sxkj.qin.SNMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxkj.qin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = wkzg_wild;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.sxkj.qin";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,11 +7,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
 target 'SNMusic' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for SNMusic
-  pod 'YiCore', '~> 0.1.0'
+  pod 'YiCore', git: 'https://github.com/damoncoo/yi-core-lib.git', branch: 'master'
+  pod 'AMMusicPlayerController', '~> 0.1.3'
 
   target 'SNMusicTests' do
     inherit! :search_paths
