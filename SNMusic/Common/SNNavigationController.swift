@@ -12,6 +12,9 @@ class SNNavigationController: UINavigationController, UIGestureRecognizerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .pageBgColor
+        
         self.navigationBar.setBackgroundImage(nil, for: UIBarMetrics.default)
         self.navigationBar.isTranslucent = false
         self.navigationBar.barTintColor = UIColor.themeColor

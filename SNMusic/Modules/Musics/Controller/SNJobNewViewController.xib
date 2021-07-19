@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SNJobNewViewController" customModule="SNMusic" customModuleProvider="target">
+            <connections>
+                <outlet property="nameTextField" destination="9cc-Re-5wp" id="FO2-rB-Xec"/>
+                <outlet property="submitButton" destination="m4U-lH-z2U" id="P1M-Nc-Ej9"/>
+                <outlet property="titleTextField" destination="pXO-IC-Uno" id="VWq-ls-YZf"/>
+                <outlet property="urlTextField" destination="rBU-hW-dkw" id="7cm-Tg-A5X"/>
+                <outlet property="view" destination="IFF-NY-oiH" id="Xer-X6-PKb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="IFF-NY-oiH">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBU-hW-dkw" customClass="SNTextField" customModule="SNMusic" customModuleProvider="target">
+                    <rect key="frame" x="32" y="35" width="256" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ydX-vC-f4J"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-Re-5wp" customClass="SNTextField" customModule="SNMusic" customModuleProvider="target">
+                    <rect key="frame" x="32" y="165" width="256" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXO-IC-Uno" customClass="SNTextField" customModule="SNMusic" customModuleProvider="target">
+                    <rect key="frame" x="32" y="100" width="256" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4U-lH-z2U">
+                    <rect key="frame" x="32" y="246" width="256" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Yrk-1p-fBT"/>
+                    </constraints>
+                    <state key="normal" title="提交"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="A7E-K1-VmW"/>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rBU-hW-dkw" firstAttribute="width" secondItem="IFF-NY-oiH" secondAttribute="width" multiplier="0.8" id="2U3-ft-eQV"/>
+                <constraint firstItem="9cc-Re-5wp" firstAttribute="top" secondItem="pXO-IC-Uno" secondAttribute="bottom" constant="15" id="4lz-Ra-Y3H"/>
+                <constraint firstItem="9cc-Re-5wp" firstAttribute="centerX" secondItem="pXO-IC-Uno" secondAttribute="centerX" id="4xx-XZ-QHS"/>
+                <constraint firstItem="pXO-IC-Uno" firstAttribute="leading" secondItem="rBU-hW-dkw" secondAttribute="leading" id="5RV-su-O9Z"/>
+                <constraint firstItem="m4U-lH-z2U" firstAttribute="top" secondItem="9cc-Re-5wp" secondAttribute="bottom" constant="31" id="Abk-OR-b6G"/>
+                <constraint firstItem="rBU-hW-dkw" firstAttribute="top" secondItem="A7E-K1-VmW" secondAttribute="top" constant="35" id="CSt-Vd-uzt"/>
+                <constraint firstItem="m4U-lH-z2U" firstAttribute="trailing" secondItem="9cc-Re-5wp" secondAttribute="trailing" id="EnG-uT-rxb"/>
+                <constraint firstItem="9cc-Re-5wp" firstAttribute="height" secondItem="pXO-IC-Uno" secondAttribute="height" id="SSb-WH-LqD"/>
+                <constraint firstItem="pXO-IC-Uno" firstAttribute="height" secondItem="rBU-hW-dkw" secondAttribute="height" id="ZR7-Cz-3bA"/>
+                <constraint firstItem="pXO-IC-Uno" firstAttribute="top" secondItem="rBU-hW-dkw" secondAttribute="bottom" constant="15" id="jbG-RF-LiX"/>
+                <constraint firstItem="rBU-hW-dkw" firstAttribute="centerX" secondItem="IFF-NY-oiH" secondAttribute="centerX" id="pUu-mY-Owy"/>
+                <constraint firstItem="pXO-IC-Uno" firstAttribute="centerX" secondItem="rBU-hW-dkw" secondAttribute="centerX" id="qm1-PT-k3I"/>
+                <constraint firstItem="m4U-lH-z2U" firstAttribute="leading" secondItem="9cc-Re-5wp" secondAttribute="leading" id="tHu-gE-NMP"/>
+                <constraint firstItem="9cc-Re-5wp" firstAttribute="leading" secondItem="pXO-IC-Uno" secondAttribute="leading" id="w2L-cL-f9X"/>
+            </constraints>
+            <point key="canvasLocation" x="-1652.1739130434785" y="-296.65178571428572"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

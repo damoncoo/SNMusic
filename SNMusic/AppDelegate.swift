@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, URLProviderProtocol {
         
         SNTheme.default.apply(theme: .yi)
         
+        UILabel.appearance(whenContainedInInstancesOf: [])
+        
         let apiSession = ApiSession(baseUrlAdapter: self)
         ApiClient.shared.useSession(session: apiSession)
         

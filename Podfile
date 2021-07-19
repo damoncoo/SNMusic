@@ -12,6 +12,7 @@ target 'SNMusic' do
   # Pods for SNMusic
   pod 'YiCore', git: 'https://github.com/damoncoo/yi-core-lib.git', branch: 'master'
   pod 'AMMusicPlayerController', '~> 0.1.3'
+  pod 'SwiftEntryKit', '1.2.6'
 
   target 'SNMusicTests' do
     inherit! :search_paths

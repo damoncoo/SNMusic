@@ -12,8 +12,10 @@
 		C7324ECB269BD97500453F8D /* SNMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ECA269BD97500453F8D /* SNMusic.swift */; };
 		C7324ECE269BDA4C00453F8D /* SNNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ECD269BDA4C00453F8D /* SNNavigationController.swift */; };
 		C7324ED0269C1AC600453F8D /* SNMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ECF269C1AC600453F8D /* SNMusicCell.swift */; };
-		C7324ED226A0752600453F8D /* SNSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ED126A0752600453F8D /* SNSearchViewController.swift */; };
 		C7324ED526A0778100453F8D /* SNMusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324ED426A0778100453F8D /* SNMusicProvider.swift */; };
+		C7324EDE26A1E13A00453F8D /* SNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7324EDD26A1E13A00453F8D /* SNTextField.swift */; };
+		C76D95DD26A48E6300C1C4B1 /* SNYoutube.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D95DC26A48E6300C1C4B1 /* SNYoutube.swift */; };
+		C76D95DF26A48E7C00C1C4B1 /* SNYoutubeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D95DE26A48E7C00C1C4B1 /* SNYoutubeCell.swift */; };
 		C77CD2AF26675FF600AC5804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2AE26675FF600AC5804 /* AppDelegate.swift */; };
 		C77CD2B326675FF600AC5804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2B226675FF600AC5804 /* ViewController.swift */; };
 		C77CD2B626675FF600AC5804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77CD2B426675FF600AC5804 /* Main.storyboard */; };
@@ -22,7 +24,11 @@
 		C77CD2C626675FFA00AC5804 /* SNMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2C526675FFA00AC5804 /* SNMusicTests.swift */; };
 		C77CD2D126675FFA00AC5804 /* SNMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2D026675FFA00AC5804 /* SNMusicUITests.swift */; };
 		C77CD2EA266760FD00AC5804 /* SNMusicPlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2E9266760FD00AC5804 /* SNMusicPlayerPresenter.swift */; };
-		C77CD2EF2667611800AC5804 /* SNMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77CD2EE2667611800AC5804 /* SNMusicViewController.swift */; };
+		C798B0BE26A1E23400E7DD45 /* SNJobNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798B0BC26A1E23400E7DD45 /* SNJobNewViewController.swift */; };
+		C798B0BF26A1E23400E7DD45 /* SNMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798B0BD26A1E23400E7DD45 /* SNMusicViewController.swift */; };
+		C798B0C126A1E28900E7DD45 /* SNJobNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C798B0C026A1E28900E7DD45 /* SNJobNewViewController.xib */; };
+		C7C469C826A266350067FC2F /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C469C726A266350067FC2F /* UIUtils.swift */; };
+		C7C469CA26A474610067FC2F /* SNSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C469C926A474610067FC2F /* SNSearchViewController.swift */; };
 		D056B5B5A02DE5FA7C529A0C /* Pods_SNMusic_SNMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57D23E06CCB484D5DA0CE8D /* Pods_SNMusic_SNMusicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +61,10 @@
 		C7324ECA269BD97500453F8D /* SNMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMusic.swift; sourceTree = "<group>"; };
 		C7324ECD269BDA4C00453F8D /* SNNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNNavigationController.swift; sourceTree = "<group>"; };
 		C7324ECF269C1AC600453F8D /* SNMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMusicCell.swift; sourceTree = "<group>"; };
-		C7324ED126A0752600453F8D /* SNSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSearchViewController.swift; sourceTree = "<group>"; };
 		C7324ED426A0778100453F8D /* SNMusicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNMusicProvider.swift; sourceTree = "<group>"; };
+		C7324EDD26A1E13A00453F8D /* SNTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNTextField.swift; sourceTree = "<group>"; };
+		C76D95DC26A48E6300C1C4B1 /* SNYoutube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNYoutube.swift; sourceTree = "<group>"; };
+		C76D95DE26A48E7C00C1C4B1 /* SNYoutubeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNYoutubeCell.swift; sourceTree = "<group>"; };
 		C77CD2AB26675FF600AC5804 /* SNMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77CD2AE26675FF600AC5804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C77CD2B226675FF600AC5804 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +79,11 @@
 		C77CD2D026675FFA00AC5804 /* SNMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMusicUITests.swift; sourceTree = "<group>"; };
 		C77CD2D226675FFA00AC5804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C77CD2E9266760FD00AC5804 /* SNMusicPlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMusicPlayerPresenter.swift; sourceTree = "<group>"; };
-		C77CD2EE2667611800AC5804 /* SNMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMusicViewController.swift; sourceTree = "<group>"; };
+		C798B0BC26A1E23400E7DD45 /* SNJobNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNJobNewViewController.swift; sourceTree = "<group>"; };
+		C798B0BD26A1E23400E7DD45 /* SNMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNMusicViewController.swift; sourceTree = "<group>"; };
+		C798B0C026A1E28900E7DD45 /* SNJobNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNJobNewViewController.xib; sourceTree = "<group>"; };
+		C7C469C726A266350067FC2F /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		C7C469C926A474610067FC2F /* SNSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSearchViewController.swift; sourceTree = "<group>"; };
 		FECBDB7CF4E42651B968CD7C /* Pods-SNMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-SNMusicTests/Pods-SNMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				C7324ECA269BD97500453F8D /* SNMusic.swift */,
+				C76D95DC26A48E6300C1C4B1 /* SNYoutube.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +158,7 @@
 		C7324ED326A0776F00453F8D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C7324EDD26A1E13A00453F8D /* SNTextField.swift */,
 				C7324ED426A0778100453F8D /* SNMusicProvider.swift */,
 			);
 			path = Other;
@@ -175,6 +189,7 @@
 		C77CD2AD26675FF600AC5804 /* SNMusic */ = {
 			isa = PBXGroup;
 			children = (
+				C7C469C626A266160067FC2F /* Utils */,
 				C7324ECC269BDA1E00453F8D /* Common */,
 				C77CD2E4266760A000AC5804 /* Modules */,
 				C77CD2AE26675FF600AC5804 /* AppDelegate.swift */,
@@ -229,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				C7324ECF269C1AC600453F8D /* SNMusicCell.swift */,
+				C76D95DE26A48E7C00C1C4B1 /* SNYoutubeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,8 +252,10 @@
 		C77CD2E7266760D400AC5804 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C77CD2EE2667611800AC5804 /* SNMusicViewController.swift */,
-				C7324ED126A0752600453F8D /* SNSearchViewController.swift */,
+				C798B0BD26A1E23400E7DD45 /* SNMusicViewController.swift */,
+				C798B0BC26A1E23400E7DD45 /* SNJobNewViewController.swift */,
+				C798B0C026A1E28900E7DD45 /* SNJobNewViewController.xib */,
+				C7C469C926A474610067FC2F /* SNSearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +266,14 @@
 				C77CD2E9266760FD00AC5804 /* SNMusicPlayerPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C7C469C626A266160067FC2F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C7C469C726A266350067FC2F /* UIUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C77CD2BB26675FF900AC5804 /* LaunchScreen.storyboard in Resources */,
+				C798B0C126A1E28900E7DD45 /* SNJobNewViewController.xib in Resources */,
 				C77CD2B826675FF900AC5804 /* Assets.xcassets in Resources */,
 				C77CD2B626675FF600AC5804 /* Main.storyboard in Resources */,
 			);
@@ -488,14 +515,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7324EDE26A1E13A00453F8D /* SNTextField.swift in Sources */,
+				C7C469CA26A474610067FC2F /* SNSearchViewController.swift in Sources */,
+				C798B0BF26A1E23400E7DD45 /* SNMusicViewController.swift in Sources */,
 				C7324ECB269BD97500453F8D /* SNMusic.swift in Sources */,
 				C7324ED526A0778100453F8D /* SNMusicProvider.swift in Sources */,
 				C77CD2B326675FF600AC5804 /* ViewController.swift in Sources */,
+				C76D95DF26A48E7C00C1C4B1 /* SNYoutubeCell.swift in Sources */,
+				C7C469C826A266350067FC2F /* UIUtils.swift in Sources */,
+				C798B0BE26A1E23400E7DD45 /* SNJobNewViewController.swift in Sources */,
 				C7324ECE269BDA4C00453F8D /* SNNavigationController.swift in Sources */,
 				C77CD2AF26675FF600AC5804 /* AppDelegate.swift in Sources */,
+				C76D95DD26A48E6300C1C4B1 /* SNYoutube.swift in Sources */,
 				C77CD2EA266760FD00AC5804 /* SNMusicPlayerPresenter.swift in Sources */,
-				C7324ED226A0752600453F8D /* SNSearchViewController.swift in Sources */,
-				C77CD2EF2667611800AC5804 /* SNMusicViewController.swift in Sources */,
 				C7324ED0269C1AC600453F8D /* SNMusicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
