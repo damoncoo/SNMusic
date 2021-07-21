@@ -42,7 +42,9 @@ class SNMusicViewController: SNWrapTableViewController <SNMusic>, AMMusicPlayerD
     }
     
     override func makeRequest(page: NSInteger, limit: NSInteger) -> DataRequest? {
-        ApiClient.shared.makeRequest(path: "/api/v2/music/song", method: .get, data: nil)
+        ApiClient.shared.makeRequest(path: "/api/v2/music/song", method: .get, data: [
+            "page" : page
+        ])
     }
     
     override func cellForItemIn(item: SNMusic, indexPath: IndexPath? = nil) -> UITableViewCell {
@@ -87,6 +89,7 @@ class SNMusicViewController: SNWrapTableViewController <SNMusic>, AMMusicPlayerD
     override func onDataFresh() {
         
         DispatchQueue.main.async {
+            self.tableViewInfo?.footerState = .none
             super.onDataFresh()
         }
     }
