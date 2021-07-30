@@ -86,7 +86,7 @@ class SNSearchViewController : UIViewController, UITableViewDelegate, UITableVie
     
     func create(ytb : SNYoutube) {
         
-        self.presenter.searchMusic(title: "", name: "", url: ytb.url)
+        self.presenter.searchMusic(title: ytb.title, name: ytb.channelTitle, url: ytb.url)
             .done { success in
                 UIUtils.showToast(message: "提交成功", duration: 2, level: .info)
         }.catch { err in
