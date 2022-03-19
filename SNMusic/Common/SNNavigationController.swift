@@ -29,6 +29,20 @@ class SNNavigationController: UINavigationController, UIGestureRecognizerDelegat
         ]
         self.navigationBar.shadowImage = UIImage()
         self.interactivePopGestureRecognizer?.delegate = self
+        
+        if #available(iOS 15.0, *) {
+            
+            let app = UINavigationBarAppearance.init()
+            app.configureWithOpaqueBackground()  // 重置背景和阴影颜色
+            app.titleTextAttributes = [
+                NSAttributedString.Key.font: font,
+                NSAttributedString.Key.foregroundColor: color,
+            ]            
+            app.backgroundColor = UIColor.themeColor  // 设置导航栏背景色
+            app.shadowImage = UIImage() // 设置导航栏下边界分割线透明
+            navigationBar.scrollEdgeAppearance = app  // 带scroll滑动的页面
+            navigationBar.standardAppearance = app // 常规页面
+        }
     }
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {

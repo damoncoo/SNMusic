@@ -18,11 +18,11 @@ class SNMusicPlayerPresenter {
 
 class SNMusicNewJobPresenter<T : HandyJSON> {
     
-    func searchMusic(title : String, name : String , url : String ) -> Promise<Bool>  {
+    func searchMusic(title : String, singer : String , url : String ) -> Promise<Bool>  {
 
         return Promise { p in
 
-            let promise : Promise<Response<T>> = ApiClient.shared.session.searchMusic(title: title, name: name, url: url) as  Promise<Response<T>>
+            let promise : Promise<Response<T>> = ApiClient.shared.session.searchMusic(singer: singer, name: title, url: url) as  Promise<Response<T>>
             promise.done { (apply) in
                 p.fulfill(true)
             }.catch { (err) in
@@ -35,10 +35,10 @@ class SNMusicNewJobPresenter<T : HandyJSON> {
 
 extension ApiSession {
     
-    func searchMusic<T>(title : String, name : String , url : String) ->  Promise<Response<T>>  {
+    func searchMusic<T>(singer : String, name : String , url : String) ->  Promise<Response<T>>  {
         
-        let paras : Dictionary<String, Any> = ["singer": title, "name" : name, "url" : url]
-        return self.R(path: "/api/v2/music/job/", method: .post, data: paras)
+        let paras : Dictionary<String, Any> = ["singer": singer, "name" : name, "url" : url]
+        return self.R(path: "/api/v2/music/job/" , method: .post, data: paras)
         
     }
     
@@ -52,7 +52,7 @@ class Youtube: URLConvertible {
     }
     
     func asURL() throws -> URL {
-        return URL(string: "http://yt.d00y.ml/yt/search?title=" + self.q.urlEncoded)!
+        return URL(string: "http://yt.seungyu.cn/yt/search?title=" + self.q.urlEncoded)!
     }
 }
 

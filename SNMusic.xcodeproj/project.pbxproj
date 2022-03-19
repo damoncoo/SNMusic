@@ -288,6 +288,7 @@
 				C77CD2A826675FF600AC5804 /* Frameworks */,
 				C77CD2A926675FF600AC5804 /* Resources */,
 				3DC45FDE98F4C3CD19C90443 /* [CP] Embed Pods Frameworks */,
+				C769249D279032F90085F74C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -485,6 +486,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C769249D279032F90085F74C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nBUNDLE_IDENTIFIER=$(/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' ${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH})\necho $BUNDLE_IDENTIFIER\n";
 		};
 		CB6264E6191EF75DF3408353 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -707,16 +725,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = V4WU778WH7;
+				DEVELOPMENT_TEAM = 4U94J7W4NA;
 				INFOPLIST_FILE = SNMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sxkj.qin;
+				PRODUCT_BUNDLE_IDENTIFIER = bak.com.hsbc.mobilex.sampleapp.music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.sxkj.qin";
+				PROVISIONING_PROFILE_SPECIFIER = "Global Journey Sample App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -730,16 +748,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = V4WU778WH7;
+				DEVELOPMENT_TEAM = 4U94J7W4NA;
 				INFOPLIST_FILE = SNMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sxkj.qin;
+				PRODUCT_BUNDLE_IDENTIFIER = bak.com.hsbc.mobilex.sampleapp.music;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.sxkj.qin";
+				PROVISIONING_PROFILE_SPECIFIER = "Global Journey Sample App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

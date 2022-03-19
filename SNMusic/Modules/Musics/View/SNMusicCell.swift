@@ -62,6 +62,7 @@ class SNMusicCell: SNBaseTableViewCell {
             maker.right.equalTo(self.contentView.snp.right).offset(-12)
             maker.bottom.equalTo(self.contentView.snp.bottom).offset(-15)
         }
+        
     }
     
     func fillWithData(music: SNMusic) {

@@ -105,7 +105,7 @@ class SNJobNewViewController: SNRouteViewController {
         let pattern = "([a-z]+\\.)(?=youtube.com)"
         url = url.replacingOccurrences(of: pattern, with: "www.", options: .regularExpression, range: nil)
         
-        self.presenter.searchMusic(title: title, name: name, url: url)
+        self.presenter.searchMusic(title: title, singer: name, url: url)
             .done { success in
                 UIUtils.showToast(message: "提交成功", duration: 2, level: .info)
                 self.popBack()
